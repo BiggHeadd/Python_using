@@ -24,6 +24,7 @@ def loop(nsec):
 
 def _main():
     for pause in loops:
+        print(pause)
         Thread(target=loop, args=(pause,)).start()
 
 @register
